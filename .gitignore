@@ -1,0 +1,43 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+kaggle.json
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Downloaded datasets (re-downloaded from Kaggle by the notebooks)
+data/
+
+# Training/inference working folders: PaddleOCR clone, pretrained weights,
+# checkpoints, exported models, logs, annotated images
+work/
+work_inference/
+artifacts/
+output/
+inference/
+pretrained/
+
+# Model weights and large generated files, wherever they end up
+*.pdparams
+*.pdopt
+*.pdiparams
+*.pdmodel
+*.states
+*.zip
+*.tar
+*.log
+
+# Editor / OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
